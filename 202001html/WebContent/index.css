@@ -1,0 +1,21 @@
+@charset "EUC-KR";
+
+h1{
+	color:#6a7892;
+}
+
+.js{
+	font-weight:bold;
+	color:#afc4e3;
+}
+
+
+span{
+	color:#382b3d;
+}
+
+#grid{
+	border:3px solid #e76278;
+	display:grid;
+	grid-template-columns: 340px 1fr;
+}
