@@ -3,17 +3,49 @@
 <head>
 <meta charset="utf-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<link rel="stylesheet" href="index.css" />
+<link rel="stylesheet" href="index.css"/>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
 <title>💘지영이 공간 뿌뿌💨💨</title>
-<script src="color.js"></script>
+<style>
+@font-face{
+font-family: 'Nanum Myeongjo', serif;}
+
+.myButton {
+	box-shadow:inset 0px 39px 0px -24px #e67a73;
+	background-color:#e4685d;
+	border-radius:4px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Yeon Sung', cursive;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.myButton:hover {
+	background-color:#eb675e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
 </head>
 <body>
 	<div class="js-clock">
 		<h1>연습쓰</h1>
 		<h2 style="background-color: #23c8b2"></h2>
+	</div>	
+		<nav class="menu">
+		<a href="#" class="myButton">연습장</a>
+		<a href="#" class="myButton">사진모음</a>
+		<a href="#" class="myButton">모아보기</a>	
+		<input type="button" value="다크" onclick="darkLightHandler(this);"><p>
+		</nav>
 	</div>
-	<input type="button" value="다크" onclick="darkLightHandler(this);
-		">
 	<p>
 	<div id="grid">
 		<div>
@@ -23,14 +55,28 @@
 width="320px" height="440px"/> -->
 		</div>
 		<div>
-			<br>너는 <span class="js">비</span>🌧가 좋다고 말했어. 하지만 <span
-				class="js">우산</span>을 폈지☂ <br>너는 <span class="js">햇빛</span>🌞을
-			사랑한다 말했어, 하지만 <span class="js">그늘</span>을 찾았어🌑 <br>너는 <span
-				class="js">바람</span>🌫을 사랑한다 말했어, 하지만 <span class="js">창문</span>🏚을
-			닫았어 <br>이게 내가 두려운 이유야 <br>넌 <span class="js">나도</span> ♥<span
-				class="js">사랑</span>한다고 했잖아
+			<br>너는 <span class="js">비</span>🌧가 좋다고 말했어. 하지만 <span class="js">우산</span>을 폈지☂ <br>
+			너는 <span class="js">햇빛</span>🌞을 사랑한다 말했어, 하지만 <span class="js">그늘</span>을 찾았어🌑 <br>
+			너는 <span class="js">바람</span>🌫을 사랑한다 말했어, 하지만 <span class="js">창문</span>🏚을
+			닫았어 <br>
+			이게 내가 두려운 이유야 <br>
+			넌 <span class="js">나도</span> ♥<span class="js">사랑</span>한다고 했잖아
+		<div>
+		<ul class="mom">
+		<li>그린티프라푸치노</li>
+		</ul>
 		</div>
+		</div>
+		</div>
+		
+		<script>
+		const mom=document.querySelector('.mom');//css처럼 클래스를 불러와서링
+		const listElem=document.createElement('li');
+		listElem.innerHTML='자바칩프라푸치노';
+		mom.appendChild(listElem);
+		</script>	
 		<script src="clock.js"></script>
+		<script src="color.js"></script>
 	</div>
 </body>
 </html>

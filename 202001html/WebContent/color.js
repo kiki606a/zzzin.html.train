@@ -1,4 +1,4 @@
-var Body={
+const Body={
 		setColor:function (color) {
 //			document.querySelector('body').style.color = color;
 			$('body').css('color',color);

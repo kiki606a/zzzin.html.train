@@ -10,12 +10,17 @@ h1{
 }
 
 
+
 span{
 	color:#382b3d;
-}
 
 #grid{
 	border:3px solid #e76278;
 	display:grid;
 	grid-template-columns: 340px 1fr;
+		font-family: 'Yeon Sung', cursive;
 }
+
+
+
+
