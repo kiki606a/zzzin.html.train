@@ -9,8 +9,6 @@ h1{
 	color:#afc4e3;
 }
 
-
-
 span{
 	color:#382b3d;
 
@@ -18,7 +16,7 @@ span{
 	border:3px solid #e76278;
 	display:grid;
 	grid-template-columns: 340px 1fr;
-		font-family: 'Yeon Sung', cursive;
+	
 }
 
 

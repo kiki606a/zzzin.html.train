@@ -5,6 +5,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="index.css"/>
 <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="1041246167049-q3mja8b552cjr15mk0r4mmlcqd8h96fa.apps.googleusercontent.com">
 <title>💘지영이 공간 뿌뿌💨💨</title>
 <style>
 @font-face{
@@ -31,19 +33,31 @@ font-family: 'Nanum Myeongjo', serif;}
 	position:relative;
 	top:1px;
 }
-
 </style>
+<script>
+function onSignIn(googleUser) {
+	  var profile = googleUser.getBasicProfile();
+	  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+	  console.log('Name: ' + profile.getName());
+	  console.log('Image URL: ' + profile.getImageUrl());
+	  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+	}
+</script>
 </head>
 <body>
 	<div class="js-clock">
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
 		<h1>연습쓰</h1>
 		<h2 style="background-color: #23c8b2"></h2>
+		
 	</div>	
 		<nav class="menu">
 		<a href="#" class="myButton">연습장</a>
 		<a href="#" class="myButton">사진모음</a>
 		<a href="#" class="myButton">모아보기</a>	
-		<input type="button" value="다크" onclick="darkLightHandler(this);"><p>
+		<input type="button" value="다크" onclick="darkLightHandler(this);">
+		
+		<p>
 		</nav>
 	</div>
 	<p>
@@ -78,5 +92,6 @@ width="320px" height="440px"/> -->
 		<script src="clock.js"></script>
 		<script src="color.js"></script>
 	</div>
+	
 </body>
 </html>
